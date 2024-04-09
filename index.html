@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/interruptor/style_interruptor.css">
+    <link rel="stylesheet" href="./src/contador/style-contador.css">
+</head>
+<body>
+
+    <section class="container">
+        <h4>Alternar tema</h4>
+          
+        <div class="switch__container">
+            <input id="switch-flat" class="switch switch--flat" type="checkbox">
+            <label for="switch-flat"></label>
+        </div>
+
+    </section>
+
+    <main>
+        <div class="titulo1">
+            <h1>Churrascômetro</h1>
+        </div>
+
+        <div class="titulos">
+            <h4>Precisa de uma ajudinha com o churrasco?</h4>
+            <h4>Quantas pessoas vão participar?</h4>
+        </div>
+
+        <section class="selecionar">
+            <div class="selecao">
+                <h5>Homens</h5>
+
+                <div id="contador" class="contador">
+                    <div>
+                        <button id="subtrair" class="subtrair">-</button>
+                        <span id="value" class="value" contenteditable="true">0</span>
+                        <button id="adicionar" class="adicionar">+</button>
+                    </div>
+                    <button id="reset">Limpar</button>
+                </div>
+                
+            </div>
+
+            <div class="selecao">
+                <h5>Mulheres</h5>
+
+                <div id="contador2" class="contador">
+                    <div>
+                        <button id="subtrair2" class="subtrair">-</button>
+                        <span id="value2" class="value" contenteditable="true">0</span>
+                        <button id="adicionar2" class="adicionar">+</button>
+                    </div>
+                    <button id="reset2">Limpar</button>
+                </div>
+            </div>
+
+            <div class="selecao">
+                <h5>Crianças</h5>
+
+                <div id="contador3" class="contador">
+                    <div>
+                        <button id="subtrair3" class="subtrair">-</button>
+                        <span id="value3" class="value" contenteditable="true">0</span>
+                        <button id="adicionar3" class="adicionar">+</button>
+                    </div>
+                    <button id="reset3">Limpar</button>
+                </div>
+            </div>
+            
+            <div class="selecao">
+                <h5>Quantos adultos bebem?</h5>
+
+                <div id="contador4" class="contador">
+                    <div>
+                        <button id="subtrair4" class="subtrair">-</button>
+                        <span id="value4" class="value" contenteditable="true">0</span>
+                        <button id="adicionar4" class="adicionar">+</button>
+                    </div>
+                    <button id="reset4">Limpar</button>
+                </div>
+            </div>
+
+        </section>
+       
+        <section class="calculo">
+            <button id="calcular">Calcular</button>
+        </section>
+
+        
+
+    </main>
+
+    <script src="./src/contador/contador.js"></script>
+    <script src="./src/interruptor/interruptor.js" ></script>
+</body>
+</html>

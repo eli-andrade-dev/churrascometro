@@ -1,0 +1,112 @@
+ *{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+}
+
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+  
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+  
+.switch--flat + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.switch--flat + label:before,
+.switch--flat + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+.switch--flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.switch--flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 28px;
+    background-color: #dddddd;
+    border-radius: 52px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+.switch--flat:checked + label {
+    background-color: #8ce196;
+}
+
+.switch--flat:checked + label:after {
+    margin-left: 25px;
+    background-color: #8ce196;
+}
+
+:root{
+    --fundo-light: #94e8f3; 
+    --texto-light: #000000;
+    --borda-light:rgb(53, 118, 0);
+
+    --fundo-dark: #331212;
+    --texto-dark: #fffcfc;
+    --borda-dark: #c7fc9c;
+}
+
+.light{
+    --fundo-use: var( --fundo-light);
+    --texto-use: var( --texto-light);
+    --borda-use: var(--borda-light);
+     
+}
+
+.dark{
+    --fundo-use: var( --fundo-dark);
+    --texto-use: var( --texto-dark);
+    --borda-use: var(--borda-dark);
+}
+  
+body {
+    background-color: var(--fundo-light);
+    color:  var(--texto-use);
+} 
+
+p{
+    color:  var(--texto-use); 
+}
+
+h2{
+    color:  var(--texto-use);  
+    border: solid 5px var(--borda-use);
+}
+
+span{
+    color: black;
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#convidados{
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 1rem;
+}

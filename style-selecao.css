@@ -1,0 +1,19 @@
+.contador {
+    display: flex;
+    align-items: center;
+}
+.contador .value {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: none;
+    background: none;
+}
+.contador button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}

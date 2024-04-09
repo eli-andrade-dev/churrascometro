@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+input{
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+}
+
+.btCadastro{
+    width: 8vw;
+    height: 3vh;
+    border: none;
+    background-color: rgb(253, 165, 0);
+}
+
+.btCadastro:hover{
+    background-color: rgb(248, 128, 84);
+}

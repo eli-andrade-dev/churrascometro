@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../interruptor/style_interruptor.css">
+    <link rel="stylesheet" href="style-cadastro.css">
+    
+</head>
+<body>
+    <section class="container">
+        <h4>Alternar tema</h4>
+          
+        <div class="switch__container">
+            <input id="switch-flat" class="switch switch--flat" type="checkbox">
+            <label for="switch-flat"></label>
+        </div>
+
+    </section>
+
+    <main>
+        <div class="titulo1">
+            <h1>Churrascômetro</h1>
+        </div>
+
+        <div class="titulos">
+            <h4>Fique por dentro de nossas novidades.</h4>
+            <h4>Cadastre seu email e receba promoções especiais!</h4>
+        </div>
+
+        <form id="formulario" onsubmit="enviarFormulario(event)">
+            <input type="text" placeholder="Digite seu nome">
+            <input type="email" name="" id="" placeholder="Digite seu email">
+            <input type="tel" name="" id="" placeholder="Digite seu telefone">
+            
+        </form>
+    </main> 
+    
+    <section>
+        <form class="check">
+            <input type="checkbox" name="" id="">
+            <h5>Concordo em receber comunicações e ofertas personalizadas, de acordo com meu interesse.</h5>
+        </form>
+        
+    </section>
+
+    <section>
+        <button class="btCadastro">Cadastrar</button>
+    </section>
+
+    <script src="formulario.js"></script>
+    <script src=""></script>
+    <script src="../interruptor/interruptor.js" ></script>
+
+</body>
+</html>
