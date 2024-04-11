@@ -6,15 +6,17 @@
 
 #convidados{
     margin-top: 30px;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1rem;
+    color: rgb(138, 116, 116);
 }
 
-.btCadastro{
+.novaConsulta{
     width: 8vw;
-    height: 3vh;
+    height: 5vh;
     border: none;
     background-color: rgb(253, 165, 0);
+    cursor: pointer;
 }
 
 .btCadastro:hover{
