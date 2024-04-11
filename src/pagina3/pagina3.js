@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const quantidadeHomens = parseInt(sessionStorage.getItem('quantidadeHomens')) || 0;
     const quantidadeMulheres = parseInt(sessionStorage.getItem('quantidadeMulheres')) || 0;
     const quantidadeCriancas = parseInt(sessionStorage.getItem('quantidadeCriancas')) || 0;
-    const quantidadeBebidas = parseInt(sessionStorage.getItem('quantidadeBebidas')) || 0;
+    //const quantidadeBebidas = parseInt(sessionStorage.getItem('quantidadeBebidas')) || 0;
 
     // Calcular quantidades dos itens
     const quantidadeCarne = (0.4 * quantidadeHomens) + (0.32 * quantidadeMulheres) + (0.20 * quantidadeCriancas);

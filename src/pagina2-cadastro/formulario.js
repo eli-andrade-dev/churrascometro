@@ -11,19 +11,11 @@ document.getElementById('btCadastrar').addEventListener('click', function() {
     console.log('Telefone:', telefone);
     // console.log('Concordo:', concordo);
 
-    // Redirecionar para a página 3 após cadastrar
-    window.location.href = '../pagina3/pagina3.html';
-});
-
-//     // Verificar se o usuário concorda com os termos
-//     if (!concorda) {
-//         alert('Você precisa concordar com os termos para se cadastrar.');
-//         return;
-//     }
-
-//     // Salvar os dados do formulário na sessionStorage
+    // Salvar os dados do formulário na sessionStorage
     sessionStorage.setItem('nome', nome);
     sessionStorage.setItem('email', email);
     sessionStorage.setItem('telefone', telefone);
 
-// });
+    // Redirecionar para a página 3 após cadastrar
+    window.location.href = '../pagina3/pagina3.html';
+});
