@@ -37,15 +37,20 @@ createCounter('value4', 'adicionar4', 'subtrair4', 'reset4');
 
 //---- até aqui são os contadores, adicionando e subtraindo as quantidades
 
+document.getElementById('calcular').addEventListener('click', function() {
+    // Obtendo os valores dos contadores
+    const quantidadeHomens = parseInt(document.getElementById('value').textContent);
+    const quantidadeMulheres = parseInt(document.getElementById('value2').textContent);
+    const quantidadeCriancas = parseInt(document.getElementById('value3').textContent);
+    const quantidadeBebidas = parseInt(document.getElementById('value4').textContent);
+    
 
-// function calcular() {
-//     const quantidadeHomens = parseInt(document.getElementById('value').textContent);
-//     const quantidadeMulheres = parseInt(document.getElementById('value2').textContent);
-//     const quantidadeCriancas = parseInt(document.getElementById('value3').textContent);
-//     const quantidadeAdultosBebem = parseInt(document.getElementById('value4').textContent);
+    // Armazenando os valores na sessionStorage
+    sessionStorage.setItem('quantidadeHomens', quantidadeHomens);
+    sessionStorage.setItem('quantidadeMulheres', quantidadeMulheres);
+    sessionStorage.setItem('quantidadeCriancas', quantidadeCriancas);
+    sessionStorage.setItem('quantidadeBebidas', quantidadeBebidas);
 
-//     const totalPessoas = quantidadeHomens + quantidadeMulheres + quantidadeCriancas + quantidadeAdultosBebem;
-
-//     // Faz o redirecionamento para a página de cadastro, passando o total de pessoas como parâmetro na URL
-//     window.location.href = `cadastro.html?total=${totalPessoas}`;
-// }
+    // Redirecionando para a página de cadastro
+    window.location.href = './src/pagina2-cadastro/cadastro.html';
+});

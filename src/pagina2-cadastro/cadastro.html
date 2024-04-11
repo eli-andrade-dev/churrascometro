@@ -32,23 +32,23 @@
         </div>
 
         <form id="formulario" onsubmit="enviarFormulario(event)">
-            <input type="text" placeholder="Digite seu nome">
-            <input type="email" name="" id="" placeholder="Digite seu email">
-            <input type="tel" name="" id="" placeholder="Digite seu telefone">
+            <input type="text" placeholder="Digite seu nome" required>
+            <input type="email" name="" id="" placeholder="Digite seu email" required>
+            <input type="tel" name="" id="" placeholder="Digite seu telefone" required>
             
         </form>
     </main> 
     
     <section>
         <form class="check">
-            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="btConcordo" required>
             <h5>Concordo em receber comunicações e ofertas personalizadas, de acordo com meu interesse.</h5>
         </form>
         
     </section>
 
     <section>
-        <button class="btCadastro">Cadastrar</button>
+        <button id="btCadastrar" class="btCadastro">Cadastrar</button>
     </section>
 
     <script src="formulario.js"></script>
